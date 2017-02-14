@@ -12,11 +12,20 @@
 
 @end
 
+#define SETTINGS_GENERAL @"App-Prefs:root=General&path=%@"
+#define PATH_ACCESSIBILITY_LARGER_TEXT @"ACCESSIBILITY/LARGER_TEXT"
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)enterAccessibilitySettings:(id)sender {
+    
+    NSURL *appSettings = [NSURL URLWithString:[NSString stringWithFormat:SETTINGS_GENERAL, PATH_ACCESSIBILITY_LARGER_TEXT]];
+    [[UIApplication sharedApplication] openURL:appSettings options:@{} completionHandler:nil];
 }
 
 
