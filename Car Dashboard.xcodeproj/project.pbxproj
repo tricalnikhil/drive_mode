@@ -13,7 +13,36 @@
 		D5B16EF01E52D49F00375F6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B16EEE1E52D49F00375F6C /* Main.storyboard */; };
 		D5B16EF21E52D49F00375F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B16EF11E52D49F00375F6C /* Assets.xcassets */; };
 		D5B16EF51E52D49F00375F6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B16EF31E52D49F00375F6C /* LaunchScreen.storyboard */; };
+		D5B16F041E52DDF400375F6C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B16F031E52DDF400375F6C /* NotificationCenter.framework */; };
+		D5B16F081E52DDF400375F6C /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B16F071E52DDF400375F6C /* TodayViewController.m */; };
+		D5B16F0B1E52DDF400375F6C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B16F091E52DDF400375F6C /* MainInterface.storyboard */; };
+		D5B16F0F1E52DDF400375F6C /* Car Dashboard Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D5B16F011E52DDF400375F6C /* Car Dashboard Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D5B16F141E52E03900375F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B16EF11E52D49F00375F6C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5B16F0D1E52DDF400375F6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5B16EDA1E52D49F00375F6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5B16F001E52DDF400375F6C;
+			remoteInfo = "Car Dashboard Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5B16F131E52DDF400375F6C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D5B16F0F1E52DDF400375F6C /* Car Dashboard Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D5B16EE21E52D49F00375F6C /* Car Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Car Dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +55,12 @@
 		D5B16EF11E52D49F00375F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5B16EF41E52D49F00375F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5B16EF61E52D49F00375F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5B16F011E52DDF400375F6C /* Car Dashboard Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Car Dashboard Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B16F031E52DDF400375F6C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		D5B16F061E52DDF400375F6C /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		D5B16F071E52DDF400375F6C /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		D5B16F0A1E52DDF400375F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D5B16F0C1E52DDF400375F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +71,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5B16EFE1E52DDF400375F6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B16F041E52DDF400375F6C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -43,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				D5B16EE41E52D49F00375F6C /* Car Dashboard */,
+				D5B16F051E52DDF400375F6C /* Car Dashboard Widget */,
+				D5B16F021E52DDF400375F6C /* Frameworks */,
 				D5B16EE31E52D49F00375F6C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				D5B16EE21E52D49F00375F6C /* Car Dashboard.app */,
+				D5B16F011E52DDF400375F6C /* Car Dashboard Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +125,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D5B16F021E52DDF400375F6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5B16F031E52DDF400375F6C /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5B16F051E52DDF400375F6C /* Car Dashboard Widget */ = {
+			isa = PBXGroup;
+			children = (
+				D5B16F061E52DDF400375F6C /* TodayViewController.h */,
+				D5B16F071E52DDF400375F6C /* TodayViewController.m */,
+				D5B16F091E52DDF400375F6C /* MainInterface.storyboard */,
+				D5B16F0C1E52DDF400375F6C /* Info.plist */,
+			);
+			path = "Car Dashboard Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,15 +154,34 @@
 				D5B16EDE1E52D49F00375F6C /* Sources */,
 				D5B16EDF1E52D49F00375F6C /* Frameworks */,
 				D5B16EE01E52D49F00375F6C /* Resources */,
+				D5B16F131E52DDF400375F6C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D5B16F0E1E52DDF400375F6C /* PBXTargetDependency */,
 			);
 			name = "Car Dashboard";
 			productName = "Car Dashboard";
 			productReference = D5B16EE21E52D49F00375F6C /* Car Dashboard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D5B16F001E52DDF400375F6C /* Car Dashboard Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5B16F121E52DDF400375F6C /* Build configuration list for PBXNativeTarget "Car Dashboard Widget" */;
+			buildPhases = (
+				D5B16EFD1E52DDF400375F6C /* Sources */,
+				D5B16EFE1E52DDF400375F6C /* Frameworks */,
+				D5B16EFF1E52DDF400375F6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Car Dashboard Widget";
+			productName = "Car Dashboard Widget";
+			productReference = D5B16F011E52DDF400375F6C /* Car Dashboard Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -109,6 +193,11 @@
 				ORGANIZATIONNAME = "Nikhil Shah";
 				TargetAttributes = {
 					D5B16EE11E52D49F00375F6C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Q62ZKPC6V5;
+						ProvisioningStyle = Automatic;
+					};
+					D5B16F001E52DDF400375F6C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Q62ZKPC6V5;
 						ProvisioningStyle = Automatic;
@@ -129,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				D5B16EE11E52D49F00375F6C /* Car Dashboard */,
+				D5B16F001E52DDF400375F6C /* Car Dashboard Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +231,15 @@
 				D5B16EF51E52D49F00375F6C /* LaunchScreen.storyboard in Resources */,
 				D5B16EF21E52D49F00375F6C /* Assets.xcassets in Resources */,
 				D5B16EF01E52D49F00375F6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B16EFF1E52DDF400375F6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B16F141E52E03900375F6C /* Assets.xcassets in Resources */,
+				D5B16F0B1E52DDF400375F6C /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +256,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5B16EFD1E52DDF400375F6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B16F081E52DDF400375F6C /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5B16F0E1E52DDF400375F6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5B16F001E52DDF400375F6C /* Car Dashboard Widget */;
+			targetProxy = D5B16F0D1E52DDF400375F6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D5B16EEE1E52D49F00375F6C /* Main.storyboard */ = {
@@ -174,6 +289,14 @@
 				D5B16EF41E52D49F00375F6C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D5B16F091E52DDF400375F6C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B16F0A1E52DDF400375F6C /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -293,6 +416,30 @@
 			};
 			name = Release;
 		};
+		D5B16F101E52DDF400375F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Q62ZKPC6V5;
+				INFOPLIST_FILE = "Car Dashboard Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.studios.khilbill.Car-Dashboard.Car-Dashboard-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D5B16F111E52DDF400375F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Q62ZKPC6V5;
+				INFOPLIST_FILE = "Car Dashboard Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.studios.khilbill.Car-Dashboard.Car-Dashboard-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -310,6 +457,15 @@
 			buildConfigurations = (
 				D5B16EFA1E52D49F00375F6C /* Debug */,
 				D5B16EFB1E52D49F00375F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5B16F121E52DDF400375F6C /* Build configuration list for PBXNativeTarget "Car Dashboard Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B16F101E52DDF400375F6C /* Debug */,
+				D5B16F111E52DDF400375F6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

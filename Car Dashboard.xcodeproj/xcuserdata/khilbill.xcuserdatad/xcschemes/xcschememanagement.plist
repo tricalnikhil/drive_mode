@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Car Dashboard Widget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Car Dashboard.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>D5B16EE11E52D49F00375F6C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5B16F001E52DDF400375F6C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
